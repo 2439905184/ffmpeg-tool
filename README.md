@@ -7,3 +7,7 @@
 //计算公式(小时*60*60*每秒帧数 + 分钟*60*帧数 + 秒*帧数 ) = 总帧数
 ffmpeg -i 斯特拉的魔法op.mp4 -r 24 %5d.jpg 
 ```
+# 视频转序列帧2
+```
+ffmpeg -i input.mp4 -vf "fps=1" output_%03d.jpg
+```
